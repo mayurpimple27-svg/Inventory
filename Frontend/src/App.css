@@ -1,0 +1,201 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navigation button {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.navigation button:hover {
+  background-color: #e9ecef;
+  color: #333;
+}
+
+.navigation button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Dashboard Styles */
+.dashboard .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard .header h1 {
+  margin: 0;
+}
+
+.refresh-btn, .edit-btn, .delete-btn, .accept-btn, .reject-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.refresh-btn:hover, .edit-btn:hover, .accept-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn, .reject-btn {
+  background-color: #dc3545;
+  margin-left: 0.5rem;
+}
+
+.delete-btn:hover, .reject-btn:hover {
+  background-color: #c82333;
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.products-table th,
+.products-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.products-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+
+.products-table tr.low-stock {
+  background-color: #fff3f3;
+}
+
+.products-table tr.low-stock td:first-child:before {
+  content: "⚠️ ";
+}
+
+.status-low {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.status-normal {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.status-pending {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.status-accepted {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.status-rejected {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+/* Suggestions Styles */
+.suggestions .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.suggestions .header h1 {
+  margin: 0;
+}
+
+.suggestions-section {
+  margin-bottom: 3rem;
+}
+
+.suggestions-section h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.suggestions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.suggestions-table th,
+.suggestions-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.suggestions-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin: 1rem 0;
+}

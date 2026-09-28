@@ -1,0 +1,24 @@
+# Backend
+Backend/src/main/java/com/StockPulse/Backend/oracleJdk-21/
+Backend/target/
+Frontend/node_modules/
+Frontend/dist/
+.env
+*.env
+
+# Frontend
+Frontend/node_modules/
+Frontend/dist/
+Frontend/.env
+Frontend/.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
